@@ -110,6 +110,7 @@ footer {
     padding: 38px 0;
     justify-content: space-between;
     align-items: center;
+    gap: 60px;
 }
 .footer-menu-container .menu-item a {
     color: #fff;

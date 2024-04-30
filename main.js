@@ -34,9 +34,11 @@ fetch('https://demofedevtest.equisolve-dev.com/api/v1/eq-test')
 
         const view = document.createElement("div")
         view.setAttribute("class", "view_bio")
-        view.innerHTML = "<span>View Bio</span>" + "<img src='/assets/Vector.png'>"
+        view.innerHTML = "<span>View Bio</span>" + "<img src='/assets/Vector.png' alt='view more'>"
 
         metanode.append(name, title, view, bio)
+
+        photo.setAttribute("alt", data[i].name);
 
         node.append(photo, metanode);
         document.getElementById("members_container").appendChild(node);
